@@ -8,8 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AllProducts from './components/AllProducts';
 import Profiles from './components/Profiles'; // ✅ Tambahkan import Profiles
-import Certificate from './components/certificate';
 import Location from './components/Location';
+import Certificate from './components/Certificate';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
