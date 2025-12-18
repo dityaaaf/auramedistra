@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import infus from "../../public/INFUSION+SET+DEWASA.jpeg";
-import oxygen from "../../public/NASAL+OXYGEN+CANUL+BAYI+.jpeg";
-import oxygenkid from "../../public/NASAL+OXYGEN+CANUL+ANAK.jpeg";
-import transfusion from "../../public/BLOOD+TRANSFUSION+SET.jpeg";
-import oxygenadult from "../../public/NASAL+OXYGEN+CANUL+DEWASA.jpeg";
-import tube from "../../public/SCT+STANDARD.jpeg";
+const infus = "/INFUSION+SET+DEWASA.jpeg";
+const oxygen = "/NASAL+OXYGEN+CANUL+BAYI+.jpeg";
+const oxygenkid = "/NASAL+OXYGEN+CANUL+ANAK.jpeg";
+const transfusion = "/BLOOD+TRANSFUSION+SET.jpeg";
+const oxygenadult = "/NASAL+OXYGEN+CANUL+DEWASA.jpeg";
+const tube = "/SCT+STANDARD.jpeg";
 
 const products = [
   {

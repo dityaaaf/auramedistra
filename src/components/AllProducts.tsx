@@ -1,47 +1,34 @@
-import infus from "../../public/INFUSION+SET+DEWASA.jpeg";
-import oxygen from "../../public/NASAL+OXYGEN+CANUL+BAYI+.jpeg";
-import oxygenkid from "../../public/NASAL+OXYGEN+CANUL+ANAK.jpeg";
-import transfusion from "../../public/BLOOD+TRANSFUSION+SET.jpeg";
-import oxygenadult from "../../public/NASAL+OXYGEN+CANUL+DEWASA.jpeg";
-import tube from "../../public/SCT+STANDARD.jpeg";
-import tubeyankeur from "../../public/SCT+WITH+YANKEUER.jpeg";
-import oxygenmask from "../../public/OXYGEN+MASK+NRM+BAYI.jpeg";
-import oxygenmaskid from "../../public/OXYGEN+MASK+NRM+ANAK.jpeg";
-import oxygenmaskadults from "../../public/OXYGEN+MASK+NRM+DEWASA.jpeg";
-import oksigenbayi from "../../public/OKSIGEN+MASK+BAYI.jpeg";
-import oksigenanak from "../../public/OKSIGEN+MASK+ANAK.jpeg";
-import oksigendewasa from "../../public/OKSIGEN+MASK+DEWASA.jpeg";
-import nebulizerbayi from "../../public/NEBULIZER+MASK+BAYI.jpeg";
-import nebulizeranak from "../../public/NEBULIZER+MASK+ANAK.jpeg";
-import nebulizerdewasa from "../../public/NEBULIZER+MASK+DEWASA.jpeg";
-import alkohokswab from "../../public/ALKOHOL+SWAB+FM.jpeg";
-import bloodlancet from "../../public/BLOOD+LANCET.jpeg";
-import poturine from "../../public/POT+URINE+NON+STERIL.jpeg";
-import poturinesteril from "../../public/POT+URINE+STERIL.jpeg";
-import potsputum from "../../public/POT+DAHAK+STERIL.jpeg";
-import tvmedis from "../../public/PATIENT+MONITOR.jpeg";
-import medicalvideo from "../../public/VIDEO+LARYNGOSCOPE.jpeg";
-import ecg12 from "../../public/ECG+12+C+BROSUR.jpeg";
-import tensimeter from "../../public/PULSEWAVE+DESKTOP.jpeg";
-import intravaneous from "../../public/Intravenous Catheter Non Port & Non Wings 18G.jpeg";
-import intravenous from "../../public/intravenous.jpeg";
+const infus = "/INFUSION+SET+DEWASA.jpeg";
+const oxygen = "/NASAL+OXYGEN+CANUL+BAYI+.jpeg";
+const oxygenkid = "/NASAL+OXYGEN+CANUL+ANAK.jpeg";
+const transfusion = "/BLOOD+TRANSFUSION+SET.jpeg";
+const oxygenadult = "/NASAL+OXYGEN+CANUL+DEWASA.jpeg";
+const tube = "/SCT+STANDARD.jpeg";
+const tubeyankeur = "/SCT+WITH+YANKEUER.jpeg";
+const oxygenmask = "/OXYGEN+MASK+NRM+BAYI.jpeg";
+const oxygenmaskid = "/OXYGEN+MASK+NRM+ANAK.jpeg";
+const oxygenmaskadults = "/OXYGEN+MASK+NRM+DEWASA.jpeg";
+const oksigenbayi = "/OKSIGEN+MASK+BAYI.jpeg";
+const oksigenanak = "/OKSIGEN+MASK+ANAK.jpeg";
+const oksigendewasa = "/OKSIGEN+MASK+DEWASA.jpeg";
+const nebulizerbayi = "/NEBULIZER+MASK+BAYI.jpeg";
+const nebulizeranak = "/NEBULIZER+MASK+ANAK.jpeg";
+const nebulizerdewasa = "/NEBULIZER+MASK+DEWASA.jpeg";
+const alkohokswab = "/ALKOHOL+SWAB+FM.jpeg";
+const bloodlancet = "/BLOOD+LANCET.jpeg";
+const poturine = "/POT+URINE+NON+STERIL.jpeg";
+const poturinesteril = "/POT+URINE+STERIL.jpeg";
+const potsputum = "/POT+DAHAK+STERIL.jpeg";
+const tvmedis = "/PATIENT+MONITOR.jpeg";
+const medicalvideo = "/VIDEO+LARYNGOSCOPE.jpeg";
+const ecg12 = "/ECG+12+C+BROSUR.jpeg";
+const tensimeter = "/PULSEWAVE+DESKTOP.jpeg";
+const intravaneous = "/Intravenous Catheter Non Port & Non Wings 18G.jpeg";
+const intravenous = "/intravenous.jpeg";
 
 export default function AllProducts() {
 
-  const prices = {
-    nonPort: [
-      { size: "18G", price: "Rp 6.600" },
-      { size: "20G", price: "Rp 6.600" },
-      { size: "22G", price: "Rp 6.600" },
-      { size: "24G", price: "Rp 6.600" },
-    ],
-    withPort: [
-      { size: "18G", price: "Rp 7.700" },
-      { size: "20G", price: "Rp 7.700" },
-      { size: "22G", price: "Rp 7.700" },
-      { size: "24G", price: "Rp 7.700" },
-    ],
-  };
+
       
   const bayi = [
     {

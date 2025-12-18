@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo from "../../public/logoptopt.png";
+const logo = "/logoptopt.png";
 
 interface HeaderProps {
   isScrolled: boolean;

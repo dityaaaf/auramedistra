@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import oldCertificate from "../../public/prestasi2.png";
-import newCertificate from "../../public/unisula2.png";
-import licenseCertificate from "../../public/sertifikat22.png";
-import extraCertificate from "../../public/unisulacertificate.png";
+const oldCertificate = "/prestasi2.png";
+const newCertificate = "/unisula2.png";
+const licenseCertificate = "/sertifikat22.png";
+const extraCertificate = "/unisulacertificate.png";
 import Footer from "./Footer";
 
 // Placeholder images for Documentation
-import doc1 from "../../public/prestasi2.png";
-import doc2 from "../../public/unisula2.png";
-import doc3 from "../../public/sertifikat22.png";
+const doc1 = "/prestasi2.png";
+const doc2 = "/unisula2.png";
+const doc3 = "/sertifikat22.png";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
