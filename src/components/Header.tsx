@@ -79,12 +79,28 @@ export default function Header({ isScrolled }: HeaderProps) {
             >
               Products
             </button>
-            <button
-              onClick={() => goToPage("/gallery")}
-              className="text-black hover:text-[#6C63FF] transition-colors duration-300 font-medium"
-            >
-              Gallery
-            </button>
+            {/* Dropdown Gallery */}
+            <div className="relative group">
+              <button 
+                className="text-black hover:text-[#6C63FF] transition-colors duration-300 font-medium flex items-center gap-1"
+              >
+                Gallery
+              </button>
+              <div className="absolute -left-4 mt-2 w-40 bg-white shadow-lg rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100">
+                <button
+                  onClick={() => goToPage("/certificate")}
+                  className="block w-full text-left px-4 py-3 text-black hover:bg-[#F4F4FF] hover:text-[#6C63FF] transition-all"
+                >
+                  Sertifikat
+                </button>
+                <button
+                  onClick={() => goToPage("/documentation")}
+                  className="block w-full text-left px-4 py-3 text-black hover:bg-[#F4F4FF] hover:text-[#6C63FF] transition-all"
+                >
+                  Dokumentasi
+                </button>
+              </div>
+            </div>
             <button
               onClick={() => goToPage("/profile")}
               className="text-black hover:text-[#6C63FF] transition-colors duration-300 font-medium"
@@ -138,12 +154,27 @@ export default function Header({ isScrolled }: HeaderProps) {
             >
               Products
             </button>
-            <button
-              onClick={() => goToPage("/gallery")}
-              className="py-2 text-black hover:text-[#6C63FF] transition-colors duration-300 text-left font-medium"
-            >
-              Gallery
-            </button>
+            {/* Gallery Dropdown Mobile */}
+            {/* Gallery Dropdown Mobile */}
+            <div className="py-2 border-l-2 border-transparent hover:border-[#6C63FF] transition-all duration-300">
+              <span className="text-gray-900 font-semibold text-base block px-2">Gallery</span>
+              <div className="pl-6 flex flex-col mt-2 space-y-3">
+                <button
+                  onClick={() => goToPage("/certificate")}
+                  className="flex items-center gap-3 p-2 rounded-lg text-gray-700 hover:bg-[#F4F4FF] hover:text-[#6C63FF] transition-all duration-300 transform active:scale-95"
+                >
+                  <span className="text-lg">📄</span> 
+                  <span className="font-medium text-sm">Sertifikat & Ijazah</span>
+                </button>
+                <button
+                  onClick={() => goToPage("/documentation")}
+                  className="flex items-center gap-3 p-2 rounded-lg text-gray-700 hover:bg-[#F4F4FF] hover:text-[#6C63FF] transition-all duration-300 transform active:scale-95"
+                >
+                  <span className="text-lg">📷</span>
+                  <span className="font-medium text-sm">Dokumentasi Kegiatan</span>
+                </button>
+              </div>
+            </div>
             <button
               onClick={() => goToPage("/profile")}
               className="py-2 text-black hover:text-[#6C63FF] transition-colors duration-300 text-left font-medium"

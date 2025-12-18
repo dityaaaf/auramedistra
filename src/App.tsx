@@ -7,9 +7,10 @@ import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AllProducts from './components/AllProducts';
-import Profiles from './components/Profiles'; // ✅ Tambahkan import Profiles
+import Certificate from './components/Certificate';
+import Documentation from './components/Documentation';
+import Profiles from './components/Profiles';
 import Location from './components/Location';
-import Gallery from './components/Gallery';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,8 +46,11 @@ function App() {
           {/* ✅ Halaman All Products */}
           <Route path="/all-products" element={<AllProducts />} />
 
-          {/* ✅ Halaman Gallery */}
-          <Route path="/gallery" element={<Gallery />} />
+          {/* ✅ Halaman Certificate */}
+          <Route path="/certificate" element={<Certificate />} />
+
+          {/* ✅ Halaman Documentation */}
+          <Route path="/documentation" element={<Documentation />} />
 
           {/* Halaman Profile */}
           <Route path="/profile" element={<Profiles />} />
