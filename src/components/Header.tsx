@@ -80,10 +80,10 @@ export default function Header({ isScrolled }: HeaderProps) {
               Products
             </button>
             <button
-              onClick={() => goToPage("/certificate")}
+              onClick={() => goToPage("/gallery")}
               className="text-black hover:text-[#6C63FF] transition-colors duration-300 font-medium"
             >
-              Certificate
+              Gallery
             </button>
             <button
               onClick={() => goToPage("/profile")}
@@ -139,10 +139,10 @@ export default function Header({ isScrolled }: HeaderProps) {
               Products
             </button>
             <button
-              onClick={() => goToPage("/certificate")}
+              onClick={() => goToPage("/gallery")}
               className="py-2 text-black hover:text-[#6C63FF] transition-colors duration-300 text-left font-medium"
             >
-              Certificate
+              Gallery
             </button>
             <button
               onClick={() => goToPage("/profile")}
