@@ -4,9 +4,9 @@ import { X } from "lucide-react";
 import Footer from "./Footer";
 
 // Placeholder images for Documentation
-const doc1 = "/prestasi2.png";
-const doc2 = "/unisula2.png";
-const doc3 = "/sertifikat22.png";
+const doc1 = "/galeri.png";
+const doc2 = "/galeri2.png";
+const doc3 = "/galeri3.png";
 
 export default function Documentation() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -30,11 +30,6 @@ export default function Documentation() {
       src: doc3,
       title: "Seminar Kesehatan",
       desc: "Partisipasi dalam seminar kesehatan nasional.",
-    },
-     {
-      src: doc1,
-      title: "Rapat Koordinasi",
-      desc: "Rapat koordinasi bulanan tim Aura Medistra.",
     },
   ];
 
@@ -95,7 +90,9 @@ export default function Documentation() {
                         whileHover={{ scale: 1.1 }}
                         src={item.src}
                         alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-300"
+                        className={`w-full h-full transition-transform duration-300 ${
+                          item.src === doc2 ? "object-contain bg-gray-50" : "object-cover"
+                        }`}
                     />
                     </div>
                     <div className="p-4 flex flex-col justify-between flex-1 text-left">
@@ -133,20 +130,20 @@ export default function Documentation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 backdrop-blur-sm p-4"
             onClick={() => setSelectedImage(null)}
           >
             <motion.div
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="relative w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-4"
+              className="relative w-full max-w-4xl h-full max-h-[90vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImage}
                 alt="Preview"
-                className="w-full h-auto rounded-2xl shadow-2xl border border-gray-300"
+                className="max-w-full max-h-full w-auto h-auto rounded-xl shadow-2xl object-contain"
               />
               <button
                 onClick={() => setSelectedImage(null)}
